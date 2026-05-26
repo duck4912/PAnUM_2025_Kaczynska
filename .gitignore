@@ -1,0 +1,7 @@
+# Blokowanie folderów build i gradle w każdym podprojekcie
+**/build/
+**/.gradle/
+**/.idea/caches/
+**/.idea/workspace.xml
+**/local.properties
+**/*.iml

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Stoper i Minutnik</string>
+    <string name="mode_stopwatch">Stoper</string>
+    <string name="mode_timer">Minutnik</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="timer_hint_min">Min</string>
+    <string name="timer_hint_sec">Sek</string>
+    <string name="toast_enter_time">Wpisz czas</string>
+    <string name="toast_time_up">Czas minął!</string>
+</resources>
