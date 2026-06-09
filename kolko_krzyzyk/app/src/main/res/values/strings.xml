@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Kółko i Krzyżyk</string>
+    <string name="setup_title">Konfiguracja Meczu</string>
+    <string name="number_of_games">Liczba gier:</string>
+    <string name="start_game">Rozpocznij Mecz</string>
+    <string name="player_x">Gracz X</string>
+    <string name="player_o">Gracz O</string>
+    <string name="score_label">Wynik:</string>
+    <string name="games_played">Rozegrane: %1$d</string>
+    <string name="games_remaining">Pozostało: %1$d</string>
+    <string name="draw">Remis!</string>
+    <string name="winner_x">Zwycięzca: Gracz X</string>
+    <string name="winner_o">Zwycięzca: Gracz O</string>
+    <string name="summary_title">Podsumowanie Meczu</string>
+    <string name="total_wins">Zwycięstwa: %1$d</string>
+    <string name="total_draws">Remisy: %1$d</string>
+    <string name="final_score">Punkty: %1$.1f</string>
+    <string name="match_winner">Zwycięzca meczu: %1$s</string>
+    <string name="new_match">Nowy Mecz</string>
+    <string name="abort_match">Przerwij Mecz</string>
+</resources>

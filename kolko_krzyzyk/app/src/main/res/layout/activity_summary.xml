@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/summary_title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tv_summary_wins_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gracz X Zwycięstwa: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_summary_wins_o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gracz O Zwycięstwa: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_summary_draws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remisy: 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tv_summary_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punkty: X: 0.0, O: 0.0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tv_overall_winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zwycięzca: Gracz X"
+        android:textSize="22sp"
+        android:textColor="@color/purple_700"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btn_new_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_match" />
+
+</LinearLayout>
