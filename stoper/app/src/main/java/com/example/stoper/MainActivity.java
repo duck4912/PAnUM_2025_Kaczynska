@@ -96,12 +96,18 @@ public class MainActivity extends AppCompatActivity {
                 startStopwatch();
             } else {
                 updateStopwatchText(stopwatchPausedTime);
+                if (stopwatchPausedTime > 0) {
+                    btnStartStopwatch.setText(R.string.resume);
+                }
             }
 
             if (isTimerRunning) {
                 startTimer();
             } else {
                 updateTimerText();
+                if (timerTimeLeftInMillis > 0) {
+                    btnStartTimer.setText(R.string.resume);
+                }
             }
         }
     }
@@ -129,14 +135,14 @@ public class MainActivity extends AppCompatActivity {
     private void startStopwatch() {
         stopwatchStartTime = System.currentTimeMillis() - stopwatchPausedTime;
         stopwatchHandler.postDelayed(stopwatchRunnable, 0);
-        btnStartStopwatch.setText(R.string.stop);
+        btnStartStopwatch.setText(R.string.pause);
         isStopwatchRunning = true;
     }
 
     private void pauseStopwatch() {
         stopwatchPausedTime = System.currentTimeMillis() - stopwatchStartTime;
         stopwatchHandler.removeCallbacks(stopwatchRunnable);
-        btnStartStopwatch.setText(R.string.start);
+        btnStartStopwatch.setText(R.string.resume);
         isStopwatchRunning = false;
     }
 
@@ -209,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }.start();
 
-        btnStartTimer.setText(R.string.stop);
+        btnStartTimer.setText(R.string.pause);
         isTimerRunning = true;
     }
 
@@ -217,7 +223,7 @@ public class MainActivity extends AppCompatActivity {
         if (countDownTimer != null) {
             countDownTimer.cancel();
         }
-        btnStartTimer.setText(R.string.start);
+        btnStartTimer.setText(R.string.resume);
         isTimerRunning = false;
     }
 
